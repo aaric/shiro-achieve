@@ -1,7 +1,8 @@
-.DS_Store
 .idea/
 .gradle/
 build/
 *.iml
 *.log
 application-*.yml
+.DS_Store
+out/
