@@ -12,6 +12,7 @@ import org.apache.shiro.realm.jdbc.JdbcRealm;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.Factory;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -23,6 +24,7 @@ import org.junit.Test;
 public class JdbcRealmTest {
 
     @Test
+    @Ignore
     public void testSource() {
         // the same as "chapter02/shiro-realm-jdbc.ini"
         DefaultSecurityManager securityManager = new DefaultSecurityManager();
@@ -50,6 +52,7 @@ public class JdbcRealmTest {
     }
 
     @Test
+    @Ignore
     public void testIni() {
         Factory<SecurityManager> factory = new IniSecurityManagerFactory("classpath:chapter03/shiro-realm-jdbc.ini");
         SecurityManager securityManager = factory.getInstance();
