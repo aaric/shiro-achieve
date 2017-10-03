@@ -29,3 +29,11 @@ create unique index idx_roles_permissions on roles_permissions(role_name, permis
 
 insert into users(username,password)values('zhang','123');
 insert into users(username,password)values('admin','123');
+
+insert into user_roles(username, role_name) values('zhang', 'role1');
+insert into user_roles(username, role_name) values('zhang', 'role2');
+
+insert into roles_permissions(role_name, permission) values('role1', '+user1+10');
+insert into roles_permissions(role_name, permission) values('role1', 'user1:*');
+insert into roles_permissions(role_name, permission) values('role1', '+user2+10');
+insert into roles_permissions(role_name, permission) values('role1', 'user2:*');
