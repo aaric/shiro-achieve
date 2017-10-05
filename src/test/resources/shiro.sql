@@ -28,7 +28,6 @@ create table roles_permissions(
 create unique index idx_roles_permissions on roles_permissions(role_name, permission);
 
 insert into users(username,password)values('zhang','123');
-insert into users(username,password)values('admin','123');
 
 insert into user_roles(username, role_name) values('zhang', 'role1');
 insert into user_roles(username, role_name) values('zhang', 'role2');
@@ -37,3 +36,6 @@ insert into roles_permissions(role_name, permission) values('role1', '+user1+10'
 insert into roles_permissions(role_name, permission) values('role1', 'user1:*');
 insert into roles_permissions(role_name, permission) values('role1', '+user2+10');
 insert into roles_permissions(role_name, permission) values('role1', 'user2:*');
+
+insert into users(username, password, password_salt) values('wu', '$shiro1$SHA-512$1$$PJkJr+wlNU1VHa4hWQuybjjVPyFzuNPcPu5MBH56scHri4UQPjvnumE7MbtcnDYhTcnxSkL9ei/bhIVrylxEwg==', null);
+insert into users(username, password, password_salt) values('liu', 'a9a114054aa6758184314fbb959fbda4', '24520ee264eab73ec09451d0e9ea6aac');
