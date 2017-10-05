@@ -92,4 +92,10 @@ public class ShiroTest {
 
         Assert.assertEquals(password2, password);
     }
+
+    @Test
+    public void testSecureRandomNumberGenerator() {
+        String salt = new SecureRandomNumberGenerator().nextBytes().toHex();
+        Assert.assertNotNull(salt);
+    }
 }
