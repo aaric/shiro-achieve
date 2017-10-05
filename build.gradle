@@ -30,6 +30,7 @@ dependencies {
     compile("org.apache.shiro:shiro-core:1.4.+")
     compile("org.apache.shiro:shiro-ehcache:1.4.+")
 
+    compile("org.springframework.boot:spring-boot-starter-jdbc:1.5.+")
     compile("org.springframework.boot:spring-boot-starter-web:1.5.+")
 
     compile("org.springframework.boot:spring-boot-devtools:1.5.+")
